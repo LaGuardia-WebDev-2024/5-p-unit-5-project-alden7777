@@ -21,13 +21,84 @@ Select TWO Additional Features to Add
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+ body {
+  font-family: impact;
+  background-color: #d9dcfa;
+  margin:auto;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin:auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #000000;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #da6e6e;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  
+}
+.main {
+  background-color:brown;
+  display:-webkit-inline-box;
+  justify-content: center;
+  margin:50px;
+  border-width: 10px;
+  border-style: groove;
+  padding: 5px;
+}
 
   </style>
 </head>
 <body>
 <h1>Come see me fight 87 squirrels.</h1>
-<h2></h2>
- 
 
+<p>It Will Be <span style="color: red;">Entertaining</span>.</p>
+<p>Don't Miss <span style="color: red;"> It</span>.</p>
+
+ <div class="main">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="7a3f0bfb-a9d0-453f-ab24-5ae1be0b3d1c.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Where: Central Park </h1> 
+      <p>When: 11/32/25 4-10pm</p> 
+      <p>Why: TBD </p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
