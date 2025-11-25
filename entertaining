@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit 5 Project</title>
+  <meta charset="utf-8">
+  <style>
+
+  </style>
+  </head>
+  <body> 
+    <h1>It Will Be <span style="color: red;">Entertaining</span>!</h1>
+    <audio controls>
+  <source src="yay-6326.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br>
+  <img src="happyness.jpg" width="400px"><br>
+  <a href="index.html">TAKE ME BACK</a>
+</body>
+</html>
